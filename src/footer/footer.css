@@ -1,0 +1,101 @@
+.f{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(180, 180, 180);
+  background-image: url("../img/fireworks.gif");
+  height: 480px;
+  padding: 40px;
+}
+
+p, h2{
+  color: black;
+}
+
+.f-left{
+  flex: 1;
+  background-color: white;
+  opacity: 60%;
+  margin-right: 20px;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.f-heading{
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.f-icon{
+  height: 60px;
+  width: 60px;
+}
+
+.f-left-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.f-info{
+  display: flex;
+  align-items: center;
+  margin: 10px 20px 10px 0;
+}
+
+.f-icon{
+  float: left;
+}
+
+.info{
+  float: left;
+  margin-left: 20px;
+}
+
+.f-right{
+  flex: 1;
+  position: relative;
+}
+
+.f-right-card{
+  position: absolute;
+  top: -26%;
+  background-color: #ffffff;
+  padding: 40px;
+  width: 86%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+}
+
+.f-msg{
+  margin-bottom: 40px;
+}
+
+.t{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.f .input{
+  height: 60px;
+}
+
+.f .area{
+  height: 120px;
+}
+
+.input:focus, .area:focus{
+  border: 3px solid rgb(32, 60, 182);
+}
+
+/* Css for button */
+ 
+
+.space{
+  background-color: red;
+}

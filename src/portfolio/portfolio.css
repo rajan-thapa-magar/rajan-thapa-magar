@@ -1,0 +1,17 @@
+.p{
+  overflow: hidden;
+  margin-bottom: 60px;
+  padding: 40px;
+}
+
+.p-title, .p-desc{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.p-cards{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

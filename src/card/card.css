@@ -1,0 +1,49 @@
+.c{
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.c-wrapper{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+}
+
+.c-browser{
+  height: 30px;
+  background-color: rgb(228, 228, 228);
+  border-radius: 5px 5px 0 0;
+  position: sticky;
+  z-index: 1000;
+}
+
+.c-img:hover{
+  animation: move 4s ease-in-out infinite alternate;
+}
+
+.c-img{
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+@keyframes move {
+  50%{
+    transform: translateY(-100px);
+  }
+}
+
+.c-info{
+  
+  margin: 20px 0 20px 0;
+}
+
+.p-name{
+  text-align: center;
+  margin-bottom: 8px;
+}
