@@ -1,5 +1,6 @@
 import './intro.css';
-import Mypic from '../../img/my-pic.png';
+
+import userInfo from '../../user_info';
 
 const Intro = () => {
   return (
@@ -7,22 +8,22 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, I am</h2>
-          <h1 className="i-name">Rajan Thapa Magar</h1>
+          <h1 className="i-name">{userInfo.name}</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">UI/UX Designer</div>
-              <div className="i-title-item">React Developer</div>
-              <div className="i-title-item">Angular Developer</div>
+              {
+                userInfo.intro.skills.map(skill => (
+                    <div key={skill} className="i-title-item">{skill}</div>
+                ))
+              }
             </div>
           </div>
-          <div className="i-desc">
-            I design and develop services for customers of all sizes, specializing in creating stylish, modern websites and web apps.
-          </div>
+          <div className="i-desc">{userInfo.intro.message}</div>
         </div>
       </div>
       <div className="i-right">
-        <div className="i-bg"></div>
-        <img src={Mypic} alt="" className="i-img" />
+        <div className="i-bg"/>
+        <img src={userInfo.intro.profile} alt="" className="i-img" />
       </div>
     </div>
   )

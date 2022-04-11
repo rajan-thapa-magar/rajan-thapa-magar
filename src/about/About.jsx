@@ -1,6 +1,7 @@
 import React from 'react';
 import './about.css';
-import Mypic from '../img/about.png';
+
+import userInfo from "../user_info";
 
 const About = () => {
   return (
@@ -8,16 +9,15 @@ const About = () => {
       <div className="a-left">
         <div className="a-card">
           <img
-            src={Mypic}
-            alt=""
+            alt="My Profile"
             className="a-img"
+            src={userInfo.about.profile}
           />
         </div>
       </div>
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
-        <p>Bla bla sadasd asd asd asdasdas asda sdasdas dasdasdas dasdasd asdsdsd sdsd sdddd d d d d d asda asdas asdasd asdasd asdasdas asds as a asdsdasd asdasd </p><br/>
-        <p>Bla bla sadasd asd asd asdasdas asda sdasdas dasdasdas dasdasd asdsdsd sdsd sdddd d d d d d asda asdas asdasd asdasd asdasdas asds as a asdsdasd asdasd Bla bla sadasd asd asd asdasdas asda sdasdas dasdasdas dasdasd asdsdsd sdsd sdddd d d d d d asda asdas asdasd asdasd asdasdas asds as a asdsdasd asdasd </p>
+        <div>{userInfo.about.message}</div>
       </div>
     </div>
   )

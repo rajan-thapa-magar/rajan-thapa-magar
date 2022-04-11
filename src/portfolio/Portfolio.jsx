@@ -1,8 +1,9 @@
 import React from 'react';
-import Card from '../card/Card';
+
 import './portfolio.css';
-// import Schedule from '..img/schedule.svg';
-import { cardData } from '../data';
+
+import Card from '../card/Card';
+import { projects } from '../user_info';
 
 const Portfolio = () => {
   return (
@@ -12,12 +13,11 @@ const Portfolio = () => {
       </div>
 
       <div className="p-desc">
-        <p className="desc"> asda asdas asdas s sd sa dfgdf wer wer sdsf asdfa sdfdsdf sdfs dfsd fsdf sdf sdfs dfsd fsd fsdf sds</p>
+        <p className="desc">{projects.message}</p>
       </div>
-      
+
       <div className="p-cards">
-        {cardData.map((data) => {
-          console.log("Data -->", data);
+        {projects.list.map((data) => {
           return (
             <Card key={data.id} img={data.img} link={data.link} />
           )

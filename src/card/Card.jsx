@@ -3,7 +3,6 @@ import React from 'react'
 import Design from '../img/design.png'
 
 const Card = ({img, link}) => {
-  console.log("Data -->", img);
   return (
     <div className="c">
       <div className="c-wrapper">

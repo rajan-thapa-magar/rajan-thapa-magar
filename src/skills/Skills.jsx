@@ -1,7 +1,8 @@
 import React from 'react'
 import './skills.css'
+
+import userInfo from '../user_info'
 import SkillCard from './skill-card/SkillCard'
-import { skillData } from '../skilldata'
 
 const Skills = () => {
   return (
@@ -10,9 +11,14 @@ const Skills = () => {
         My Skills
       </h1>
       <div className="s-card">
-        {skillData.map((data) => {
+        {userInfo.skills.map((data, index) => {
             return (
-              <SkillCard key={data.id} title={data.title} desc={data.desc} style={data.style} img={data.img} />)
+              <SkillCard
+                  img={data.img}
+                  desc={data.desc}
+                  title={data.title}
+                  style={data.style}
+                  key={`skill-${index}`}/>)
         })}
       </div>
     </div>

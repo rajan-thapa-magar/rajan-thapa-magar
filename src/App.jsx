@@ -1,21 +1,21 @@
 import './app.css';
+
+
+import { ThemeProvider, useTheme } from './context';
+
 import About from "./about/About";
-import Intro from "./components/intro/Intro";
-import Portfolio from "./portfolio/Portfolio";
 import Footer from './footer/Footer';
 import Skills from './skills/Skills';
-import Toggle from './toogle/Toggle';
-import { useContext } from 'react';
-import { themeContext } from './context';
+import Intro from "./components/intro/Intro";
+import Portfolio from "./portfolio/Portfolio";
+import ThemeToggle from './toogle/ThemeToggle';
 
-const App = () => {
+const RootScreen = () => {
+  const { darkMode } = useTheme();
 
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
-  
   return (
     <div style={{ backgroundColor: darkMode ? '#222' : 'white', color: darkMode ? 'white' : 'black'}}>
-      <Toggle />
+      <ThemeToggle />
       <Intro />
       <About />
       <Portfolio />
@@ -25,4 +25,10 @@ const App = () => {
   );
 };
 
-export default App;
+export default function App(){
+    return (
+        <ThemeProvider>
+            <RootScreen />
+        </ThemeProvider>
+    )
+};
