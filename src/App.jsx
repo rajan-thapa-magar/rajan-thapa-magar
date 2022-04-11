@@ -1,28 +1,29 @@
 import './app.css';
-import About from "./about/About";
-import Intro from "./components/intro/Intro";
-import Portfolio from "./portfolio/Portfolio";
-import Footer from './footer/Footer';
-import Skills from './skills/Skills';
-import Toggle from './toogle/Toggle';
-import { useContext } from 'react';
-import { themeContext } from './context';
 
-const App = () => {
+import { ThemeToggle } from './common/components';
+import { ThemeProvider, useTheme } from './common/components';
 
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
-  
+import { Intro, About, Skills, Projects, Contact } from './pages';
+
+const RootScreen = () => {
+  const { darkMode } = useTheme();
+
   return (
     <div style={{ backgroundColor: darkMode ? '#222' : 'white', color: darkMode ? 'white' : 'black'}}>
-      <Toggle />
+      <ThemeToggle />
       <Intro />
       <About />
-      <Portfolio />
+      <Projects />
       <Skills />
-      <Footer />
+      <Contact />
     </div>
   );
 };
 
-export default App;
+export default function App(){
+    return (
+        <ThemeProvider>
+            <RootScreen />
+        </ThemeProvider>
+    )
+};

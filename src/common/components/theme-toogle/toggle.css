@@ -1,7 +1,7 @@
 .tog{
-  height: 33px;
-  width: 68px;
-  margin: 20px;
+  height: 26px;
+  width: 52px;
+  margin: 10px;
   background-color: red;
   position: fixed;
   /* From https://css.glass */
@@ -23,8 +23,8 @@
 }
 
 .t-button{
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   background-color: red;
   position: absolute;

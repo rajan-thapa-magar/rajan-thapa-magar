@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(180, 180, 180);
-  background-image: url("../img/fireworks.gif");
+  background-image: url("../../common/assets/image/fireworks.gif");
   height: 480px;
   padding: 40px;
 }
@@ -94,8 +94,12 @@ p, h2{
 }
 
 /* Css for button */
- 
+
 
 .space{
   background-color: red;
+}
+
+.m-space {
+  margin-top: 10px;
 }

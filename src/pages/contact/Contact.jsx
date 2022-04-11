@@ -1,20 +1,28 @@
 import React, { useRef, useState } from 'react'
-import './footer.css'
-import { contact } from '../contact'
-import Phone from '../img/phone.png'
-import Email from '../img/email.png'
-import Button from '../shared/Button'
 import emailjs from '@emailjs/browser'
 
-const Footer = () => {
+
+import './contact.css'
+
+import Phone from '../../common/assets/image/phone.png'
+import Email from '../../common/assets/image/email.png'
+import { Button } from '../../common/components'
+
+import userInfo from "../../user_info";
+
+const Contact = () => {
   const formRef = useRef()
   const [done, setDone] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    emailjs.sendForm('service_2nc7ce3', 'template_5xn1lpn', formRef.current, 'GR3IoGo1Hg_IDrQlg')
-      .then((result) => {
+    emailjs.sendForm(
+        process.env.SERVICE_ID,
+        process.env.EMAIL_TEMPLATE_ID,
+        formRef.current,
+        process.env.EMAIL_USER_ID
+    ).then((result) => {
         console.log(result.text);
         setDone(true)
       }, (error) => {
@@ -30,20 +38,20 @@ const Footer = () => {
         <div className="f-left-wrapper">
           <div className="f-info">
             <img src={Phone} alt="phone-icon" className="f-icon" />
-            <p className="info">{ contact.phone }</p>
+            <p className="info">{ userInfo.contact.phone }</p>
           </div>
 
           <div className="f-info">
             <img src={Email} alt="email-icon" className="f-icon" />
-            <p className="info">{ contact.email }</p>
+            <p className="info">{ userInfo.contact.email }</p>
           </div>
         </div>
       </div>
       <div className="f-right">
         <div className="f-right-card">
           <h2 className="f-heading">Wanna Connect with me? </h2>
-          <p className="f-msg">Leave me a message in my Gmail to connect with me</p>
-          
+          <p className="f-msg">Leave me a message to connect with me</p>
+
           <form
             className="contact-form"
             ref={formRef}
@@ -52,11 +60,19 @@ const Footer = () => {
               <input type="text" placeholder="Your Name" name="name" className="t input"/>
               <input type="text" placeholder="Your Email" name="email" className="t input"/>
               <input type="text" placeholder="Subject" name="subject" className="t input" />
-              <textarea type="text" placeholder="Enter Your Message" name="message" className="t area" />
+              <textarea
+                  type="text"
+                  name="message"
+                  className="t area"
+                  placeholder="Enter Your Message"  />
+
               <Button buttonName="Send" />
-            
-            {done &&
-              <div className="sent-notification">Mail Sent</div>}
+
+            {done && (
+                <div className="sent-notification">
+                    Mail Sent
+                </div>
+            )}
           </form>
         </div>
       </div>
@@ -64,4 +80,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export { Contact };
