@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css';
 
-import userInfo from "../user_info";
+import userInfo from "../../user_info";
 
 const About = () => {
   return (
@@ -9,9 +9,9 @@ const About = () => {
       <div className="a-left">
         <div className="a-card">
           <img
-            alt="My Profile"
             className="a-img"
-            src={userInfo.about.profile}
+            src={userInfo.about.profile.src}
+            alt={userInfo.about.profile.alt}
           />
         </div>
       </div>
@@ -23,4 +23,4 @@ const About = () => {
   )
 }
 
-export default About
+export { About }

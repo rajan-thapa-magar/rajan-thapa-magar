@@ -23,10 +23,13 @@ const Intro = () => {
       </div>
       <div className="i-right">
         <div className="i-bg"/>
-        <img src={userInfo.intro.profile} alt="" className="i-img" />
+        <img
+            className="i-img"
+            src={userInfo.intro.profile.src}
+            alt={userInfo.intro.profile.alt}/>
       </div>
     </div>
   )
 }
 
-export default Intro
+export { Intro }

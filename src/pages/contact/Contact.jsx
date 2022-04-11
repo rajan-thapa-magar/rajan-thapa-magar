@@ -2,22 +2,27 @@ import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
 
-import './footer.css'
-import Phone from '../img/phone.png'
-import Email from '../img/email.png'
-import Button from '../shared/Button'
+import './contact.css'
 
-import userInfo from "../user_info";
+import Phone from '../../common/assets/image/phone.png'
+import Email from '../../common/assets/image/email.png'
+import { Button } from '../../common/components'
 
-const Footer = () => {
+import userInfo from "../../user_info";
+
+const Contact = () => {
   const formRef = useRef()
   const [done, setDone] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    emailjs.sendForm('service_2nc7ce3', 'template_5xn1lpn', formRef.current, 'GR3IoGo1Hg_IDrQlg')
-      .then((result) => {
+    emailjs.sendForm(
+        process.env.SERVICE_ID,
+        process.env.EMAIL_TEMPLATE_ID,
+        formRef.current,
+        process.env.EMAIL_USER_ID
+    ).then((result) => {
         console.log(result.text);
         setDone(true)
       }, (error) => {
@@ -75,4 +80,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export { Contact };

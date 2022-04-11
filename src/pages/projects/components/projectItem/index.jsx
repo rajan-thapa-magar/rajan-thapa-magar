@@ -1,8 +1,8 @@
-import './card.css'
-import React from 'react'
-import Design from '../img/design.png'
+import React from 'react';
 
-const Card = ({img, link}) => {
+import './ProjectItem.css';
+
+const ProjectItem = ({ image, link, title, description }) => {
   return (
     <div className="c">
       <div className="c-wrapper">
@@ -11,16 +11,16 @@ const Card = ({img, link}) => {
         <a href={link} target="_blank" rel="noreferrer">
           <img
             alt="Product"
-            src={Design}
+            src={image}
             className="c-img" />
         </a>
       </div>
       <div className="c-info">
-        <h2 className="p-name"> Portfolio 1</h2>
-        <p className="p-desc"> asdasd asdasd asdasd asdasd a sss asda asdas aasdasdas</p>
+        <h2 className="p-name">{title}</h2>
+        <p className="p-desc">{description}</p>
       </div>
     </div>
   )
 }
 
-export default Card
+export { ProjectItem }

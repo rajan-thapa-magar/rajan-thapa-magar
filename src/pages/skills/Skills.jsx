@@ -1,7 +1,7 @@
 import React from 'react'
 import './skills.css'
 
-import userInfo from '../user_info'
+import userInfo from '../../user_info'
 import SkillCard from './skill-card/SkillCard'
 
 const Skills = () => {
@@ -14,8 +14,8 @@ const Skills = () => {
         {userInfo.skills.map((data, index) => {
             return (
               <SkillCard
-                  img={data.img}
                   desc={data.desc}
+                  image={data.image}
                   title={data.title}
                   style={data.style}
                   key={`skill-${index}`}/>)
@@ -25,4 +25,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export { Skills }
