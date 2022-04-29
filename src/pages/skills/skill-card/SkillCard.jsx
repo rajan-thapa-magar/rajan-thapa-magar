@@ -1,10 +1,10 @@
 import React from 'react'
-import './skillcard.css'
+import './skillcard.scss'
 
 const SkillCard = ({title, desc, image}) => {
   return (
     <div className="sc">
-      <img src={image} className="sc-icon" alt={title}/>
+      <img src={image} className="sc-image" alt={title}/>
       <div className="sc-info">
         <h2 className="sc-title">
           {title}

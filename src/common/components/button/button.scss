@@ -1,0 +1,29 @@
+.b-wrapper {
+	button {
+		background: black;
+		color: white;
+		width: 200px;
+		height: 50px;
+		border: 0;
+		font-size: 18px;
+		border-radius: 10px;
+		transition: 0.3s;
+		overflow: hidden;
+		cursor: pointer;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	
+		img {
+			width: 42px;
+		}
+	}
+	
+	button:hover {
+		transition: 0.1 ease-in-out;
+		background-color: red;
+		color: white;
+		box-shadow: rgba(255, 0, 0, 0.288) 0px 7px 29px 0px;
+	}
+}

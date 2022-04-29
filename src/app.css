@@ -1,3 +1,12 @@
 iframe{
   display:  none;
 }
+
+.content-wrapper {
+  max-width: 1428px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width) {
+  
+}
