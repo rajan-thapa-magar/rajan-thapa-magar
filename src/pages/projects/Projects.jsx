@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import './projects.css';
+import "./projects.css";
 
-import { projects } from '../../user_info';
+import { projects } from "../../user_info";
 
 import { ProjectItem } from "./components";
 
 const Projects = () => {
   return (
-    <div className="p">
+    <div className="p" id="portfolioSection">
       <div className="p-title">
         <h1 className="title">My Portfolios</h1>
       </div>
@@ -18,20 +18,20 @@ const Projects = () => {
       </div>
 
       <div className="p-cards">
-        {projects.list.map((project,index) => {
+        {projects.list.map((project, index) => {
           return (
             <ProjectItem
-                image={project.img}
-                link={project.link}
-                title={project.title}
-                key={`project-item-${index}`}
-                description={project.description}
+              image={project.image}
+              link={project.link}
+              title={project.title}
+              key={`project-item-${index}`}
+              description={project.description}
             />
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export { Projects }
+export { Projects };

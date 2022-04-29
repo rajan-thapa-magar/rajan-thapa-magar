@@ -7,8 +7,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 400px;
+  min-height: 264px;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   overflow: hidden;
@@ -23,7 +22,7 @@
 }
 
 .c-img:hover{
-  animation: move 4s ease-in-out infinite alternate;
+  animation: mymove 1s ease-in-out infinite alternate;
 }
 
 .c-img{
@@ -32,9 +31,9 @@
   width: 100%;
 }
 
-@keyframes move {
+@keyframes mymove {
   50%{
-    transform: translateY(-100px);
+    transform: translateY(-10px);
   }
 }
 
@@ -44,6 +43,12 @@
 }
 
 .p-name{
-  text-align: center;
+  text-align: left;
   margin-bottom: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .c {
+    width: 100%;
+  }
 }

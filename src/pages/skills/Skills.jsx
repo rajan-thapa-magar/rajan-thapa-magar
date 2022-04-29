@@ -6,7 +6,7 @@ import SkillCard from './skill-card/SkillCard'
 
 const Skills = () => {
   return (
-    <div className="s">
+    <div className="s" id="mySkillsSection">
       <h1 className="s-title">
         My Skills
       </h1>

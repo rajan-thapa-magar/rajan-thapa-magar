@@ -1,12 +1,13 @@
 .p{
   overflow: hidden;
-  margin-bottom: 60px;
-  padding: 40px;
+  padding: 140px 40px 40px 40px;
 }
 
-.p-title, .p-desc{
-  display: flex;
-  justify-content: center;
+.p-title {
+  margin-bottom: 12px;
+}
+
+.p-desc {
   margin-bottom: 40px;
 }
 

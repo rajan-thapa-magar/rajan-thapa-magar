@@ -6,8 +6,6 @@ const ProjectItem = ({ image, link, title, description }) => {
   return (
     <div className="c">
       <div className="c-wrapper">
-        <div className="c-browser">
-        </div>
         <a href={link} target="_blank" rel="noreferrer">
           <img
             alt="Product"

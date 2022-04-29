@@ -1,0 +1,61 @@
+.nav-wrapper {
+  height: 6rem;
+  position: fixed;
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  z-index: 2000;
+  
+  // Glassmorphism css
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 0 0 12px 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+
+  .nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.6rem;
+
+    .logo {
+      img {
+        height: 6rem;
+      }
+    }
+
+    .n-list {
+      display: flex;
+      gap: 2.2rem;
+      list-style: none;
+      padding: 1rem 1.2rem;
+
+      li {
+        padding: 0.4rem;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+
+          a {
+            color: red;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 584px) {
+  .nav-wrapper {
+    display: none;
+  }
+}

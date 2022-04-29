@@ -1,10 +1,18 @@
-.f{
-  display: flex;
-  flex-wrap: wrap;
+.f {
   background-color: rgb(180, 180, 180);
   background-image: url("../../common/assets/image/fireworks.gif");
-  height: 480px;
-  padding: 40px;
+  min-height: 700px;
+  max-height: 1000px;
+  padding: 140px 40px 40px 40px;
+  
+}
+
+.f-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1428px;
+  margin: 0 auto;
 }
 
 p, h2{
@@ -14,31 +22,35 @@ p, h2{
 .f-left{
   flex: 1;
   background-color: white;
-  opacity: 60%;
-  margin-right: 20px;
+  opacity: 90%;
   padding: 40px;
   border-radius: 20px;
 }
 
 .f-heading{
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   font-weight: 600;
 }
 
+.f-msg {
+  margin-bottom: 24px;
+}
+
 .f-icon{
-  height: 60px;
-  width: 60px;
+  height: 24px;
+  width: 24px;
 }
 
 .f-left-wrapper{
   display: flex;
   flex-direction: column;
+  margin-top: 24px;
 }
 
 .f-info{
   display: flex;
   align-items: center;
-  margin: 10px 20px 10px 0;
+  margin: 14px 20px 14px 0;
 }
 
 .f-icon{
@@ -60,18 +72,15 @@ p, h2{
   top: -26%;
   background-color: #ffffff;
   padding: 40px;
-  width: 86%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 20px;
-}
-
-.f-msg{
-  margin-bottom: 40px;
+  right: 0;
+  left: 0;
 }
 
 .t{
   width: 100%;
-  margin-bottom: 20px;
+  margin: 8px 0 20px 0;
   padding: 12px 20px;
   box-sizing: border-box;
   border: 3px solid #ccc;
@@ -82,15 +91,26 @@ p, h2{
 }
 
 .f .input{
-  height: 60px;
+  height: 48px;
+  margin: 4px 0 4px 0; 
 }
 
 .f .area{
   height: 120px;
+  font-size: 14px;
+  margin: 8px 0 4px 0;
+}
+
+.input-wrapper {
+  margin-bottom: 20px;
 }
 
 .input:focus, .area:focus{
   border: 3px solid rgb(32, 60, 182);
+}
+
+.validation-error {
+  color: red;
 }
 
 /* Css for button */
@@ -102,4 +122,15 @@ p, h2{
 
 .m-space {
   margin-top: 10px;
+}
+
+@media screen and (max-width: 985px) {
+
+  .f {
+    min-height: 1040px;
+  }
+
+  .f-wrapper {
+    flex-direction: column;
+  }
 }
