@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/rajan-thapa-magar/static/css/main.49ac3a5c.chunk.css",
+    "main.js": "/rajan-thapa-magar/static/js/main.8a187422.chunk.js",
+    "main.js.map": "/rajan-thapa-magar/static/js/main.8a187422.chunk.js.map",
+    "runtime-main.js": "/rajan-thapa-magar/static/js/runtime-main.04b9a3be.js",
+    "runtime-main.js.map": "/rajan-thapa-magar/static/js/runtime-main.04b9a3be.js.map",
+    "static/css/2.f4c56af9.chunk.css": "/rajan-thapa-magar/static/css/2.f4c56af9.chunk.css",
+    "static/js/2.a88f3ead.chunk.js": "/rajan-thapa-magar/static/js/2.a88f3ead.chunk.js",
+    "static/js/2.a88f3ead.chunk.js.map": "/rajan-thapa-magar/static/js/2.a88f3ead.chunk.js.map",
+    "index.html": "/rajan-thapa-magar/index.html",
+    "static/css/2.f4c56af9.chunk.css.map": "/rajan-thapa-magar/static/css/2.f4c56af9.chunk.css.map",
+    "static/css/main.49ac3a5c.chunk.css.map": "/rajan-thapa-magar/static/css/main.49ac3a5c.chunk.css.map",
+    "static/js/2.a88f3ead.chunk.js.LICENSE.txt": "/rajan-thapa-magar/static/js/2.a88f3ead.chunk.js.LICENSE.txt",
+    "static/media/about.png": "/rajan-thapa-magar/static/media/about.a47194e5.png",
+    "static/media/angular.png": "/rajan-thapa-magar/static/media/angular.45fe1a5d.png",
+    "static/media/email.01b773f8.png": "/rajan-thapa-magar/static/media/email.01b773f8.png",
+    "static/media/email.svg": "/rajan-thapa-magar/static/media/email.80b23b18.svg",
+    "static/media/contact.scss": "/rajan-thapa-magar/static/media/fireworks.062ee5d8.gif",
+    "static/media/html.png": "/rajan-thapa-magar/static/media/html.3a7adc2d.png",
+    "static/media/linkedin.svg": "/rajan-thapa-magar/static/media/linkedin.d342c2bc.svg",
+    "static/media/loader.e36dc94d.svg": "/rajan-thapa-magar/static/media/loader.e36dc94d.svg",
+    "static/media/logo.gif": "/rajan-thapa-magar/static/media/logo.6fa252b4.gif",
+    "static/media/moon.01b773f8.png": "/rajan-thapa-magar/static/media/moon.01b773f8.png",
+    "static/media/my-pic.png": "/rajan-thapa-magar/static/media/my-pic.aef679e4.png",
+    "static/media/phone.01b773f8.png": "/rajan-thapa-magar/static/media/phone.01b773f8.png",
+    "static/media/phone.svg": "/rajan-thapa-magar/static/media/phone.7df015ac.svg",
+    "static/media/portfolio-1.jpg": "/rajan-thapa-magar/static/media/portfolio-1.90974820.jpg",
+    "static/media/portfolio-2.jpg": "/rajan-thapa-magar/static/media/portfolio-2.672defaf.jpg",
+    "static/media/portfolio-3.jpg": "/rajan-thapa-magar/static/media/portfolio-3.c16aec7b.jpg",
+    "static/media/react.png": "/rajan-thapa-magar/static/media/react.cd4ab684.png",
+    "static/media/sun.01b773f8.png": "/rajan-thapa-magar/static/media/sun.01b773f8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04b9a3be.js",
+    "static/css/2.f4c56af9.chunk.css",
+    "static/js/2.a88f3ead.chunk.js",
+    "static/css/main.49ac3a5c.chunk.css",
+    "static/js/main.8a187422.chunk.js"
+  ]
+}
